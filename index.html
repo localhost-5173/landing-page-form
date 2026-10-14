@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bano Qabil — Incubation Center Internship</title>
+<link rel="icon" type="image/png" href="assets/logo-transparent.png" />
+<link rel="apple-touch-icon" href="assets/logo.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Bano Qabil Home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/logo-transparent.png" alt="Bano Qabil Logo" class="brand-logo-img" width="36" height="36" />
+        </span>
+        <span class="brand-name">Bano Qabil</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="#details">Details</a>
+        <a href="#apply">How to Apply</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button type="button" class="btn btn-primary btn-sm js-open-register header-reg-btn">Register Now</button>
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="icon-menu" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <svg class="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" hidden>
+      <nav class="mobile-nav-links" aria-label="Mobile navigation">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#eligibility" class="mobile-nav-link">Eligibility</a>
+        <a href="#details" class="mobile-nav-link">Details</a>
+        <a href="#apply" class="mobile-nav-link">How to Apply</a>
+      </nav>
+      <button type="button" class="btn btn-primary js-open-register mobile-drawer-btn">Register Now</button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <span class="badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Internship Program · Applications Open
+        </span>
+
+        <h1 class="hero-title">
+          Become Capable.<br/>
+          <span class="accent">Get Hired For It.</span>
+        </h1>
+
+        <p class="hero-sub">
+          Work alongside real mentors on real projects at the Incubation Center  ship things
+          that matter, build a portfolio, and walk away with a track record employers notice.
+        </p>
+
+        <div class="hero-cta">
+          <button type="button" class="btn btn-primary js-open-register">Register Now</button>
+          <a href="#about" class="btn btn-ghost">Learn More</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">120+</span>
+            <span class="hero-stat-label">Active interns</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">40+</span>
+            <span class="hero-stat-label">Mentor experts</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">72%</span>
+            <span class="hero-stat-label">Offer rate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="blob blob-lg"></div>
+        <div class="blob blob-sm"></div>
+        <div class="ring"></div>
+        <div class="hero-emblem-wrap">
+          <div class="hero-emblem">
+            <img src="assets/logo.png" alt="Bano Qabil Emblem" class="hero-emblem-img" width="160" height="160" />
+          </div>
+        </div>
+        <div class="float-card float-card-top">
+          <span class="float-ico">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </span>
+          <div>
+            <strong>85+</strong>
+            <span>Projects delivered</span>
+          </div>
+        </div>
+        <div class="float-card float-card-bottom">
+          <span class="float-ico">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </span>
+          <div>
+            <strong>Community</strong>
+            <span>Top Mentors / Industry Experts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="about wrap">
+      <div class="about-copy">
+        <p class="eyebrow">About the program</p>
+        <h2>Where academic learning turns into shipped work</h2>
+        <p class="body-text">
+          Our internship bridges the gap between the classroom and the industry. You'll work
+          beside experienced mentors on live projects  from product design and development to
+          business analysis and marketing strategy.
+        </p>
+        <p class="body-text">
+          This isn't a passive learning track. You'll own tasks, make decisions, and leave with
+          skills, connections, and a track record that sets you apart in the job market.
+        </p>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-num">120+</span>
+          <span class="stat-label">Active interns</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">40+</span>
+          <span class="stat-label">Mentor experts</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">85+</span>
+          <span class="stat-label">Projects delivered</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">72%</span>
+          <span class="stat-label">Offer rate</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Eligibility ===== -->
+    <section id="eligibility" class="section wrap">
+      <div class="section-head">
+        <p class="eyebrow">Requirements</p>
+        <h2>Who can apply?</h2>
+        <p class="section-sub">We welcome ambitious students from all backgrounds who are ready to grow.</p>
+      </div>
+
+      <div class="card-grid card-grid-4">
+        <div class="info-card">
+          <span class="info-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+          </span>
+          <h3>Education Level</h3>
+          <p>Students who have completed Matric or Intermediate, as well as those currently pursuing higher education, are welcome to apply.</p>
+        </div>
+        <div class="info-card">
+          <span class="info-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </span>
+          <h3>Required skills</h3>
+          <p>Basic programming knowledge in any language, eagerness to learn, and a problem-solving mindset.</p>
+        </div>
+        <div class="info-card">
+          <span class="info-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 18h6"/>
+              <path d="M10 22h4"/>
+              <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"/>
+            </svg>
+          </span>
+          <h3>Willingness to Learn</h3>
+          <p>Motivated individuals who are eager to learn, develop practical skills, and gain hands-on experience are encouraged to apply.</p>
+        </div>
+        <div class="info-card">
+          <span class="info-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </span>
+          <h3>Other requirements</h3>
+          <p>Must be available for the full duration, with strong communication skills and team spirit.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Details ===== -->
+    <section id="details" class="section wrap">
+      <div class="section-head">
+        <p class="eyebrow">The breakdown</p>
+        <h2>Internship details</h2>
+      </div>
+
+      <div class="card-grid card-grid-4">
+        <div class="detail-card">
+          <span class="info-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </span>
+          <span class="detail-label">Duration</span>
+          <h3>Flexible Duration</h3>
+          <p>Duration may vary depending on the internship program.</p>
+        </div>
+        <div class="detail-card">
+          <span class="info-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </span>
+          <span class="detail-label">Location</span>
+          <h3>On-Site</h3>
+          <p>Internship takes place on-site at the assigned location.</p>
+        </div>
+        <div class="detail-card">
+          <span class="info-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+              <polyline points="12 14 12 17 14 17"/>
+            </svg>
+          </span>
+          <span class="detail-label">Timing</span>
+          <h3>Flexible Hours</h3>
+          <p>Part-time &amp; full-time tracks</p>
+        </div>
+        <div class="detail-card">
+          <span class="info-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </span>
+          <span class="detail-label">Extra-Curricular Activities</span>
+          <h3>Skill-Building Activities</h3>
+          <p>Participate in collaborative activities, practical learning, and professional skill development.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How to apply ===== -->
+    <section id="apply" class="section wrap">
+      <div class="section-head">
+        <p class="eyebrow">Application process</p>
+        <h2>How to apply</h2>
+        <p class="section-sub">A simple, four-step form-based process to start your internship journey.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-head">
+            <span class="step-num">01</span>
+            <span class="step-ico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M9 3v18"/>
+                <path d="M14 9h3"/>
+                <path d="M14 13h3"/>
+                <path d="M14 17h3"/>
+              </svg>
+            </span>
+          </div>
+          <h3>Open the Registration Form</h3>
+          <p>Click the "Register Now" button on the website to open the full-screen application form.</p>
+          <button type="button" class="btn btn-primary btn-sm js-open-register step-cta-btn">Open Registration Form</button>
+        </div>
+        <span class="step-arrow" aria-hidden="true">→</span>
+        <div class="step">
+          <div class="step-head">
+            <span class="step-num">02</span>
+            <span class="step-ico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+              </svg>
+            </span>
+          </div>
+          <h3>Enter Your Details</h3>
+          <p>Complete the Personal Details, Course Details, and About You sections with accurate information.</p>
+        </div>
+        <span class="step-arrow" aria-hidden="true">→</span>
+        <div class="step">
+          <div class="step-head">
+            <span class="step-num">03</span>
+            <span class="step-ico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </span>
+          </div>
+          <h3>Review &amp; Submit</h3>
+          <p>Review your entered information, correct any mistakes, and submit the completed application form.</p>
+        </div>
+        <span class="step-arrow" aria-hidden="true">→</span>
+        <div class="step">
+          <div class="step-head">
+            <span class="step-num">04</span>
+            <span class="step-ico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </span>
+          </div>
+          <h3>Application Confirmation</h3>
+          <p>After successful submission, the website displays the existing application confirmation message.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section wrap">
+      <div class="cta-box">
+        <span class="badge badge-light">✦ Limited spots available</span>
+        <h2>Ready to start your journey?</h2>
+        <p>Don't miss your chance to grow, learn, and build something meaningful. Applications close soon.</p>
+        <button type="button" class="btn btn-primary js-open-register">Register Now</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Bano Qabil Home">
+          <span class="brand-mark">
+            <img src="assets/logo-transparent.png" alt="Bano Qabil Logo" class="brand-logo-img" width="36" height="36" />
+          </span>
+          <span class="brand-name">Bano Qabil</span>
+        </a>
+        <p>Empowering the next generation of innovators, founders, and tech professionals — apni dunya, aap paida karo.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <a href="#about">About</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="#details">Details</a>
+        <a href="#apply">How to apply</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:internship@banoqabil.io">internship@banoqabil.io</a>
+        <span>Innovation District, Building A</span>
+      </div>
+    </div>
+
+    <div class="wrap footer-bottom">
+      <p>© 2026 Bano Qabil Incubation Center. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Registration Modal (Full-Screen) ===== -->
+  <div class="modal-overlay modal-overlay-fullscreen" id="register-overlay" hidden>
+    <div class="modal modal-fullscreen" role="dialog" aria-modal="true" aria-labelledby="register-title">
+      <div class="modal-header">
+        <div class="modal-header-inner">
+          <div class="modal-head">
+            <span class="badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Internship Program
+            </span>
+            <h2 id="register-title">Register for the internship</h2>
+            <p class="modal-sub">Fill in your details below and our team will get back to you shortly.</p>
+          </div>
+          <button type="button" class="modal-close" id="register-close" aria-label="Close registration form">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <form id="register-form" class="modal-form" novalidate>
+          <!-- Multi-Step Progress Indicator -->
+          <div class="form-progress-wrap" aria-live="polite">
+            <div class="form-progress-info">
+              <span class="form-progress-step" id="form-step-indicator">Step 1 of 3 — Personal Information</span>
+              <span class="form-progress-percent" id="form-step-percent">33%</span>
+            </div>
+            <div class="form-progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" id="form-progress-bar">
+              <div class="form-progress-fill" id="form-progress-fill" style="width: 33%;"></div>
+            </div>
+          </div>
+
+          <!-- Dynamic Form Steps Container (Populated via backend GET /api/form-config or fallback) -->
+          <div id="form-steps-container">
+            <!-- Step 1: Personal Information -->
+            <div class="form-step active" id="form-step-1" data-step="1">
+              <div class="form-section-title">
+                <span class="form-section-num">1</span>
+                <span>Personal Information</span>
+              </div>
+
+              <!-- 1. Full Name -->
+              <div class="form-row">
+                <label for="reg-name">Full name <span class="required-star" aria-hidden="true">*</span></label>
+                <input type="text" id="reg-name" name="name" class="input-uppercase" placeholder="e.g. MUHAMMAD ALI" autocomplete="name" required />
+                <span class="form-error" id="error-reg-name" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- 2. Date of Birth & 3. Gender -->
+              <div class="form-row form-row-split">
+                <div>
+                  <label for="reg-dob">Date of birth <span class="required-star" aria-hidden="true">*</span></label>
+                  <input type="date" id="reg-dob" name="dob" required />
+                  <span class="form-error" id="error-reg-dob" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="gender-group" id="gender-group-container">
+                  <label id="gender-label">Gender <span class="required-star" aria-hidden="true">*</span></label>
+                  <div class="gender-radio-group" role="radiogroup" aria-labelledby="gender-label">
+                    <label class="radio-card">
+                      <input type="radio" name="gender" id="gender-male" value="Male" required />
+                      <span>Male</span>
+                    </label>
+                    <label class="radio-card">
+                      <input type="radio" name="gender" id="gender-female" value="Female" required />
+                      <span>Female</span>
+                    </label>
+                  </div>
+                  <span class="form-error" id="error-gender" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- 4. CNIC Number & 5. Father/Guardian Name -->
+              <div class="form-row form-row-split">
+                <div>
+                  <label for="reg-cnic">CNIC number <span class="required-star" aria-hidden="true">*</span></label>
+                  <input type="text" id="reg-cnic" name="cnic" placeholder="e.g. 42101-1234567-1" maxlength="15" autocomplete="off" required />
+                  <span class="form-error" id="error-reg-cnic" role="alert" aria-live="polite"></span>
+                </div>
+                <div>
+                  <label for="reg-father-name">Father/Guardian name <span class="required-star" aria-hidden="true">*</span></label>
+                  <input type="text" id="reg-father-name" name="father_name" class="input-uppercase" placeholder="e.g. ABDUL REHMAN" required />
+                  <span class="form-error" id="error-reg-father-name" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- 6. About Yourself (Integrated into Personal Information) -->
+              <div class="form-row">
+                <label for="reg-about">About yourself <span class="required-star" aria-hidden="true">*</span></label>
+                <textarea id="reg-about" name="about" rows="3" placeholder="Briefly introduce yourself, your interests, skills, and goals..." required></textarea>
+                <span class="form-error" id="error-reg-about" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <!-- Step 2: Contact Information -->
+            <div class="form-step" id="form-step-2" data-step="2" hidden>
+              <div class="form-section-title">
+                <span class="form-section-num">2</span>
+                <span>Contact Information</span>
+              </div>
+
+              <!-- 7. Address -->
+              <div class="form-row">
+                <label for="reg-address">Address <span class="required-star" aria-hidden="true">*</span></label>
+                <input type="text" id="reg-address" name="address" placeholder="e.g. House #, Street, Area, City" autocomplete="street-address" required />
+                <span class="form-error" id="error-reg-address" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- 8. Email Address -->
+              <div class="form-row">
+                <label for="reg-email">Email address <span class="required-star" aria-hidden="true">*</span></label>
+                <input type="email" id="reg-email" name="email" placeholder="e.g. student@example.com" autocomplete="email" required />
+                <span class="form-error" id="error-reg-email" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- 9. Phone Number & 10. Guardian Number -->
+              <div class="form-row form-row-split">
+                <div>
+                  <label for="reg-phone">Phone number <span class="required-star" aria-hidden="true">*</span></label>
+                  <div class="phone-input-wrap">
+                    <span class="phone-prefix">+92</span>
+                    <input type="tel" id="reg-phone" name="phone" placeholder="300 1234567" maxlength="11" autocomplete="tel" required />
+                  </div>
+                  <span class="form-error" id="error-reg-phone" role="alert" aria-live="polite"></span>
+                </div>
+                <div>
+                  <label for="reg-guardian-phone">Guardian number <span class="optional-tag">(optional)</span></label>
+                  <div class="phone-input-wrap">
+                    <span class="phone-prefix">+92</span>
+                    <input type="tel" id="reg-guardian-phone" name="guardian_phone" placeholder="300 1234567" maxlength="11" autocomplete="tel" />
+                  </div>
+                  <span class="form-error" id="error-reg-guardian-phone" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Course & Campus Details -->
+            <div class="form-step" id="form-step-3" data-step="3" hidden>
+              <div class="form-section-title">
+                <span class="form-section-num">3</span>
+                <span>Course &amp; Campus Details</span>
+              </div>
+
+              <!-- 11. Course & 12. Teacher Name -->
+              <div class="form-row form-row-split">
+                <div>
+                  <label for="reg-course">Course <span class="required-star" aria-hidden="true">*</span></label>
+                  <select id="reg-course" name="course" required>
+                    <option value="" selected disabled>Select course</option>
+                    <option value="AI for Everyone">AI for Everyone</option>
+                    <option value="Backend Development with Node.js">Backend Development with Node.js</option>
+                    <option value="CIT &amp; Programming Foundations">CIT &amp; Programming Foundations</option>
+                    <option value="Computer Information and Technology (CIT)">Computer Information and Technology (CIT)</option>
+                    <option value="Cyber Security Essentials">Cyber Security Essentials</option>
+                    <option value="Data Analytics &amp; Business Intelligence">Data Analytics &amp; Business Intelligence</option>
+                    <option value="DevOps Foundations">DevOps Foundations</option>
+                    <option value="Digital Content Creation">Digital Content Creation</option>
+                    <option value="Digital Forensic and Ethical Hacking">Digital Forensic and Ethical Hacking</option>
+                    <option value="Digital Journalism">Digital Journalism</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="E-Commerce Development Mastery">E-Commerce Development Mastery</option>
+                    <option value="E-Commerce Marketplace">E-Commerce Marketplace</option>
+                    <option value="Essentials for AI &amp; Prompt Mastery">Essentials for AI &amp; Prompt Mastery</option>
+                    <option value="Freelancing &amp; Tech Sales Mastery">Freelancing &amp; Tech Sales Mastery</option>
+                    <option value="Frontend Web Development">Frontend Web Development</option>
+                    <option value="Game Development with Blender">Game Development with Blender</option>
+                    <option value="Game Development with Unity">Game Development with Unity</option>
+                    <option value="Generative AI">Generative AI</option>
+                    <option value="Graphic Designing">Graphic Designing</option>
+                    <option value="Mobile Application Development with Flutter">Mobile Application Development with Flutter</option>
+                    <option value="Social Media Management">Social Media Management</option>
+                    <option value="SQA &amp; Test Automation">SQA &amp; Test Automation</option>
+                    <option value="UI/UX Design with Figma">UI/UX Design with Figma</option>
+                    <option value="Video Editing &amp; Animations">Video Editing &amp; Animations</option>
+                    <option value="Web Development with AI">Web Development with AI</option>
+                  </select>
+                  <span class="form-error" id="error-reg-course" role="alert" aria-live="polite"></span>
+                </div>
+                <div>
+                  <label for="reg-teacher">Teacher name <span class="required-star" aria-hidden="true">*</span></label>
+                  <input type="text" id="reg-teacher" name="teacher" placeholder="e.g. Sir Kashif" required />
+                  <span class="form-error" id="error-reg-teacher" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- 13. Campus & 14. Obtained Marks -->
+              <div class="form-row form-row-split">
+                <div>
+                  <label for="reg-campus">Campus <span class="required-star" aria-hidden="true">*</span></label>
+                  <select id="reg-campus" name="campus" required>
+                    <option value="" selected disabled>Select Karachi campus</option>
+                    <option value="Al Huda Campus (North Karachi - Power House)">Al Huda Campus (North Karachi - Power House)</option>
+                    <option value="Al-Aqsa Campus (Gulshan-e-Iqbal 13D)">Al-Aqsa Campus (Gulshan-e-Iqbal 13D)</option>
+                    <option value="Anjuman Complex Campus (Sakhi Hasan)">Anjuman Complex Campus (Sakhi Hasan)</option>
+                    <option value="Askari Degree College (Bahadurabad)">Askari Degree College (Bahadurabad)</option>
+                    <option value="Bahadurabad Campus - Escuela Schooling System">Bahadurabad Campus - Escuela Schooling System</option>
+                    <option value="Bahria Town Campus">Bahria Town Campus</option>
+                    <option value="BanoQabil Shah Latif Town Campus">BanoQabil Shah Latif Town Campus</option>
+                    <option value="Clifton Campus">Clifton Campus</option>
+                    <option value="Dr. Mehmood Hussain Campus (Shahfaisal Town)">Dr. Mehmood Hussain Campus (Shahfaisal Town)</option>
+                    <option value="Etawa Campus (Gulshan-e-Maymar)">Etawa Campus (Gulshan-e-Maymar)</option>
+                    <option value="Garden Campus">Garden Campus</option>
+                    <option value="Gulberg Campus">Gulberg Campus</option>
+                    <option value="Gulshan-e-Hadeed Campus">Gulshan-e-Hadeed Campus</option>
+                    <option value="Gulshan-e-Iqbal Campus - Circle Social Welfare">Gulshan-e-Iqbal Campus - Circle Social Welfare</option>
+                    <option value="HOL Kara Bai Campus (Lyari)">HOL Kara Bai Campus (Lyari)</option>
+                    <option value="Harmain Campus (P.E.C.H.S-6)">Harmain Campus (P.E.C.H.S-6)</option>
+                    <option value="Idara Noor-e-Haq Campus">Idara Noor-e-Haq Campus</option>
+                    <option value="Jamia Millia School Campus (Shah Faisal)">Jamia Millia School Campus (Shah Faisal)</option>
+                    <option value="Jamia Tul Ansar Campus">Jamia Tul Ansar Campus</option>
+                    <option value="KMA Protech Institute Campus">KMA Protech Institute Campus</option>
+                    <option value="Kausar Town Campus (Malir)">Kausar Town Campus (Malir)</option>
+                    <option value="Korangi Allah Wala Town Campus">Korangi Allah Wala Town Campus</option>
+                    <option value="Landhi#6 Campus">Landhi#6 Campus</option>
+                    <option value="Liaquatabad Campus">Liaquatabad Campus</option>
+                    <option value="Metroville Campus">Metroville Campus</option>
+                    <option value="North Karachi Campus - 11L">North Karachi Campus - 11L</option>
+                    <option value="Orangi Town 11 ½ Campus - Salman Farsi">Orangi Town 11 ½ Campus - Salman Farsi</option>
+                    <option value="PIA Society Campus">PIA Society Campus</option>
+                    <option value="Pakistan Central Homeopathic Medical College (Nazimabad)">Pakistan Central Homeopathic Medical College (Nazimabad)</option>
+                    <option value="Piston College Campus">Piston College Campus</option>
+                    <option value="SKIT - Keamari Campus">SKIT - Keamari Campus</option>
+                    <option value="Sherwani Suites Campus">Sherwani Suites Campus</option>
+                  </select>
+                  <span class="form-error" id="error-reg-campus" role="alert" aria-live="polite"></span>
+                </div>
+                <div>
+                  <label for="reg-marks">Obtained marks <span class="required-star" aria-hidden="true">*</span></label>
+                  <input type="number" id="reg-marks" name="marks" min="0" max="1100" step="any" placeholder="e.g. 85 or 85%" required />
+                  <span class="form-error" id="error-reg-marks" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step Navigation Controls -->
+          <div class="form-step-actions">
+            <button type="button" class="btn btn-ghost" id="form-prev-btn" style="display: none;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+              Previous
+            </button>
+            <button type="button" class="btn btn-primary" id="form-next-btn">
+              Next
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <button type="submit" class="btn btn-primary modal-submit" id="register-submit-btn" style="display: none;">
+              Submit Application
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Success Confirmation Modal ===== -->
+  <div class="modal-overlay" id="success-overlay" hidden>
+    <div class="modal success-modal-card" role="dialog" aria-modal="true" aria-labelledby="success-title">
+      <button type="button" class="modal-close" id="success-close-x" aria-label="Close confirmation">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <div class="modal-success">
+        <div class="modal-success-ico">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="modal-success-title" id="success-title">Application Submitted Successfully!</h3>
+        <p class="modal-success-desc">Thank you for applying to Bano Qabil. Your internship application has been submitted successfully.</p>
+        <button type="button" class="btn btn-primary modal-success-close-btn" id="success-close-btn">Back to Home</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
