@@ -875,8 +875,27 @@ function initMobileMenu(): void {
   });
 }
 
+// Swap a YouTube thumbnail for the real player only when clicked,
+// so YouTube isn't loaded until a visitor wants to watch.
+function initVideoEmbeds(): void {
+  document.querySelectorAll<HTMLButtonElement>(".js-video").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.videoId;
+      if (!id) return;
+      const iframe = document.createElement("iframe");
+      iframe.className = "video-frame";
+      iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0`;
+      iframe.title = btn.dataset.videoTitle || "YouTube video";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      iframe.allowFullscreen = true;
+      btn.replaceWith(iframe);
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initThemeToggle();
   initModals();
   initMobileMenu();
+  initVideoEmbeds();
 });
