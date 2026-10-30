@@ -469,33 +469,145 @@ button {
   right: 10px;
 }
 
-.hero-photo {
-  position: relative;
-  z-index: 2;
-  width: 94%;
-  aspect-ratio: 16 / 10;
-  border-radius: 24px;
+.hero-backphoto {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 64%;
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
   overflow: hidden;
+  rotate: 5deg;
   background: var(--surface-muted);
   box-shadow: 0 18px 42px rgba(15, 76, 58, 0.22), 0 0 0 6px rgba(255, 255, 255, 0.6), 0 0 0 1px var(--border-soft);
   animation: emblem-float 6s ease-in-out infinite alternate;
 }
 
-[data-theme="dark"] .hero-photo {
+[data-theme="dark"] .hero-backphoto {
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.65), 0 0 0 6px rgba(255, 255, 255, 0.08);
 }
 
-.hero-photo img {
+.hero-backphoto img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 55% center;
+}
+
+.hero-video {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 28px;
+  width: 88%;
+  padding: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 24px 48px rgba(15, 15, 12, 0.18);
+}
+
+[data-theme="dark"] .hero-video {
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.55);
+}
+
+.video-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 10px 8px 4px;
+}
+
+.video-caption strong {
+  font-size: 14px;
+}
+
+.video-caption span {
+  font-size: 12.5px;
+  color: var(--text-muted);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-photo {
+  .hero-backphoto {
     animation: none;
   }
+}
+
+/* ============ Video embeds ============ */
+.video-embed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #000000;
+}
+
+.video-facade {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.video-facade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.video-facade:hover img {
+  transform: scale(1.03);
+}
+
+.video-facade:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--brand-1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 0 8px rgba(255, 255, 255, 0.22);
+  transform: translate(-50%, -50%);
+  transition: transform .2s ease;
+}
+
+.video-facade:hover .video-play {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.video-duration {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.video-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @keyframes emblem-float {
@@ -542,8 +654,8 @@ button {
 }
 
 .float-card-bottom {
-  bottom: 40px;
-  left: 40px;
+  bottom: -12px;
+  right: -10px;
 }
 
 /* ============ About ============ */
@@ -903,6 +1015,61 @@ button {
 .alp-phase p {
   font-size: 13.5px;
   color: var(--text-muted);
+}
+
+/* ============ Success stories ============ */
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.story-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.story-card .video-embed {
+  border-radius: 0;
+}
+
+.story-body {
+  padding: 22px 24px 24px;
+}
+
+.story-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-soft-text);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.story-body h3 {
+  font-size: 17px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.story-body p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.story-source {
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 16px;
 }
 
 /* ============ Centres ============ */
@@ -2013,9 +2180,8 @@ section[id] {
     transform: translate(-50%, -50%);
   }
 
-  .hero-photo {
-    width: 100%;
-    border-radius: 20px;
+  .hero-backphoto {
+    border-radius: 16px;
   }
 
   .float-card-top {
@@ -2023,10 +2189,9 @@ section[id] {
     left: 0;
   }
 
+  /* Would cover the video caption at this width */
   .float-card-bottom {
-    bottom: 14px;
-    right: 0;
-    left: auto;
+    display: none;
   }
 
   .about {
@@ -2168,7 +2333,7 @@ section[id] {
   }
 
   .hero-art {
-    height: 270px;
+    height: 310px;
     max-width: 330px;
   }
 
@@ -2189,8 +2354,31 @@ section[id] {
     height: 255px;
   }
 
-  .hero-photo {
+  .hero-video {
+    bottom: 10px;
+    padding: 6px;
     border-radius: 16px;
+  }
+
+  .video-embed {
+    border-radius: 11px;
+  }
+
+  .video-play {
+    width: 52px;
+    height: 52px;
+  }
+
+  .video-caption {
+    padding: 8px 6px 2px;
+  }
+
+  .video-caption strong {
+    font-size: 13px;
+  }
+
+  .video-caption span {
+    font-size: 11.5px;
   }
 
   .float-card {
@@ -2212,11 +2400,6 @@ section[id] {
   .float-card-top {
     top: 6px;
     left: -2px;
-  }
-
-  .float-card-bottom {
-    bottom: 6px;
-    right: -2px;
   }
 
   .about-copy h2 {
@@ -2283,9 +2466,18 @@ section[id] {
     min-height: 44px;
   }
 
-  .gallery-grid {
+  .gallery-grid,
+  .story-grid {
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+
+  .story-body {
+    padding: 18px 16px 20px;
+  }
+
+  .story-body h3 {
+    font-size: 16px;
   }
 
   .gallery-wide img {
@@ -2532,7 +2724,7 @@ section[id] {
   }
 
   .hero-art {
-    height: 240px;
+    height: 290px;
     max-width: 290px;
   }
 
@@ -2544,10 +2736,6 @@ section[id] {
   .ring {
     width: 220px;
     height: 220px;
-  }
-
-  .hero-photo {
-    border-radius: 14px;
   }
 
   .float-card {
@@ -2569,11 +2757,6 @@ section[id] {
   .float-card-top {
     top: 4px;
     left: -4px;
-  }
-
-  .float-card-bottom {
-    bottom: 4px;
-    right: -4px;
   }
 
   .stat-grid {

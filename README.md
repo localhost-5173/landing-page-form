@@ -35,11 +35,12 @@ The **Bano Qabil Incubation Center Internship Landing Page** is a dedicated web 
 
 ## ✨ Key Features
 
-- **Hero Section with Incubation Centre Photo:** Program-wide statistics from banoqabil.pk, call-to-actions, and a floating photo of the Incubation Center.
+- **Hero Section with Incubation Video:** Program-wide statistics from banoqabil.pk, call-to-actions, and a click-to-play YouTube video from the Incubation Centre certificate ceremony (YouTube only loads after the visitor clicks play).
 - **Comprehensive Sections:**
   - **About the Incubation Centres:** Mission, impact metrics, and a photo from a Bano Qabil campus.
   - **What You Get:** Real projects, portfolio, mentors, teamwork, Qabil.jobs, and career coaching.
   - **Accelerated Learning Program (ALP):** Who it's for and the four-phase track (Skill sprint → Build → Showcase → Launch).
+  - **What Incubatees Achieve:** Achievement highlights plus Mohsin's and Rubab's success-story videos from Alkhidmat Karachi.
   - **Our Centres:** Bahadurabad (near Char Minar Chowrangi) and Clifton (Punjab Chowrangi) with Google Maps directions.
   - **Who Can Apply (Eligibility):** Criteria for Bano Qabil students and graduates.
   - **Program Details:** Duration, on-site location, flexible hours, and skill-building activities.
