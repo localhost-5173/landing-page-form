@@ -35,13 +35,17 @@ The **Bano Qabil Incubation Center Internship Landing Page** is a dedicated web 
 
 ## ✨ Key Features
 
-- **Hero Section with Dynamic Emblem:** Includes statistics badges, interactive call-to-actions, and an animated circular emblem.
+- **Hero Section with Incubation Centre Photo:** Program-wide statistics from banoqabil.pk, call-to-actions, and a floating photo of the Incubation Center.
 - **Comprehensive Sections:**
-  - **About the Program:** Core mission, impact metrics, and value proposition.
-  - **Who Can Apply (Eligibility):** Welcoming criteria for Matric, Intermediate, and higher education students.
-  - **Internship Details:** Key information on flexible duration, on-site environment, flexible hours, and skill-building activities.
+  - **About the Incubation Centres:** Mission, impact metrics, and a photo from a Bano Qabil campus.
+  - **What You Get:** Real projects, portfolio, mentors, teamwork, Qabil.jobs, and career coaching.
+  - **Accelerated Learning Program (ALP):** Who it's for and the four-phase track (Skill sprint → Build → Showcase → Launch).
+  - **Our Centres:** Bahadurabad (near Char Minar Chowrangi) and Clifton (Punjab Chowrangi) with Google Maps directions.
+  - **Who Can Apply (Eligibility):** Criteria for Bano Qabil students and graduates.
+  - **Program Details:** Duration, on-site location, flexible hours, and skill-building activities.
   - **How to Apply:** Four-step illustrated roadmap with direct "Open Registration Form" CTA.
-  - **Call to Action & Footer:** Quick access links, direct email contact, and social links (Instagram & Facebook).
+  - **Gallery & FAQ:** Convocation, graduation, and partnership photos, plus common questions.
+  - **Call to Action & Footer:** Quick links, centre directions, phone/WhatsApp/email contact, and social links (Facebook, LinkedIn, X).
 - **Interactive Multi-Step Registration Modal:**
   - 4-step progressive form (Personal Info, Contact Info, Course Details, About You).
   - Real-time input validation, custom error messaging, and CNIC auto-formatting (`XXXXX-XXXXXXX-X`).
@@ -67,6 +71,7 @@ The **Bano Qabil Incubation Center Internship Landing Page** is a dedicated web 
 ```text
 bano-qabil-landing-page/
 ├── assets/                       # Image assets and brand logos
+│   ├── images/                   # Photos from banoqabil.pk (incubation centre, convocations, events)
 │   ├── bano-qabil-logo.png
 │   ├── logo-transparent.png
 │   └── logo.png
